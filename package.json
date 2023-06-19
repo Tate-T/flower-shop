@@ -1,27 +1,27 @@
 {
-  "name": "parcel-project-template",
+  "name": "flower-shop",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://yasinskislava.github.io/flowers-shop-project/",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /flowers-shop-project/",
+    "build": "parcel build src/*.html --public-url /flower-shop/",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "netlify deploy -p"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/flowers-shop-project.git"
+    "url": "git+https://github.com/Tate-T/flower-shop.git"
   },
   "keywords": [],
-  "author": "Viacheslav Yasinskyi <yasinskislava@gmail.com>",
+  "author": "Tetiana Tarasovych <tetjana.tarasovych.cv@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/goitacademy/flowers-shop-project/issues"
+    "url": "https://github.com/Tate-T/flower-shop/issues"
   },
   "dependencies": {
     "gh-pages": "^5.0.0",
-    "modern-normalize": "^1.1.0"
+    "modern-normalize": "^1.1.0",
+    "netlify-cli": "^15.6.0"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
